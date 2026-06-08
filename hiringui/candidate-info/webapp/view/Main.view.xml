@@ -1,0 +1,78 @@
+<mvc:View controllerName="com.hr.candidateinfo.controller.Main"
+xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+    <App id="idappCon">
+        <pages>
+            <Page showHeader="false" showFooter="false">
+                <ObjectHeader
+                    title="{task>/TaskTitle}"
+                    number="{task>/Priority}"
+                    numberUnit="{task>/PriorityText}"
+                    class="sapUiResponsivePadding--header" >
+                    <statuses>
+                        <ObjectStatus
+                            text="{task>/Status}"
+                        />
+                    </statuses>
+                    <ObjectAttribute text="{task>/CreatedBy}" />
+                    <ObjectAttribute text="{task>/CreatedOn}" />
+                </ObjectHeader>
+                <content>
+                    <VBox class="sapUiSmallMargin">
+                        <f:SimpleForm id="SimpleFormDisplay354"
+                            editable="false"
+                            layout="ResponsiveGridLayout"
+                            title="Anubhav Training (New Telant Hiring program)"
+                            labelSpanXL="3"
+                            labelSpanL="3"
+                            labelSpanM="3"
+                            labelSpanS="12"
+                            adjustLabelSpan="false"
+                            emptySpanXL="4"
+                            emptySpanL="4"
+                            emptySpanM="4"
+                            emptySpanS="0"
+                            columnsXL="1"
+                            columnsL="1"
+                            columnsM="1"
+                            singleContainerFullSize="false" >
+                            <f:content>
+                                <Label text="Name" />
+                                <Input value="{context>/name}" />
+                                <Label text="Work Experience" />
+                                <Input value="{context>/workExperience}" type="Number"/>
+                                <Label text="Previous Employer Name" />
+                                <Input value="{context>/employerName}" />
+                                <Label text="Skills" />
+                                <MultiComboBox
+                                    selectionFinish="handleSelectionFinish"
+                                    width="350px">
+                                    <core:Item key="ABAP" text="ABAP"/>
+                                    <core:Item key="SAP BTP" text="SAP BTP"/>
+                                    <core:Item key="Analytics Cloud" text="Analytics Cloud"/>
+                                    <core:Item key="Workflow" text="Workflow"/>
+                                    <core:Item key="BTP Workflow" text="BTP Workflow"/>
+                                    <core:Item key="S/4HANA" text="S/4HANA"/>
+                                </MultiComboBox>
+                                <Label text="Email Id" />
+                                <Input value="{context>/email}"/>
+
+                                <Label text="Country" />
+                                <Input value="{context>/country}" />
+                                <Label text="budget" />
+                                <Input value="{context>/budget}" type="Number"/>
+                            </f:content>
+                        </f:SimpleForm>
+                    </VBox>
+                    <FlexBox id="comment-wrapper" direction="Column" class="sapUiSmallMargin" width="auto">
+                        <CheckBox id="Ack" text="I acknowledge that we have received your order and will process it based on the availability" />
+                        <Label id="comment-label" text="Comment" />
+                        <TextArea id="comment-field" showExceededText="true" maxLength="1000" width="100%" height="120px" value="{context>/comment}"/>
+                    </FlexBox>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
