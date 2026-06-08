@@ -1,0 +1,17 @@
+"sap.app": {
+	...,
+	"crossNavigation": {
+		"inbounds": {
+			"<unique key>": {
+				"semanticObject": "app",
+				"action": "open",
+				"title": "My Title",
+				"subTitle": "My Subtitle"
+			}
+		}
+	}
+	...
+}
+
+//////////////
+flexEnabled: false

@@ -1,0 +1,5 @@
+resources:
+.....here goes your build service name in btp
+- name: build_bpa_runtime
+  type: org.cloudfoundry.existing-service
+.....

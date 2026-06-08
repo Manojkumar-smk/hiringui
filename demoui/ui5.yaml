@@ -1,0 +1,7 @@
+        backend:
+          - path: /sap
+            url: http://localhost
+          - path: /bpmworkflowruntime
+            pathPrefix: /public/workflow/rest
+            url: https://spa-api-gateway-bpi-us-prod.cfapps.us10.hana.ondemand.com
+            destination: sap_process_automation_service

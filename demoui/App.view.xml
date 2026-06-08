@@ -1,0 +1,13 @@
+<App id="app">
+        <Page title="Anubhav Trainings Start Build Process UI">
+            <content>
+                <VBox width="100%" direction="Column" id="__vbox0">
+                    <items>
+                        <Input width="100%" id="textInput" value="{/text}"/>
+                        <Button text="Start Build Process Anubhav" id="__button0" press="startWorkflow"/>
+                        <Text text="{/result}" maxLines="0" id="__text0"/>
+                    </items>
+                </VBox>
+            </content>
+        </Page>
+    </App>

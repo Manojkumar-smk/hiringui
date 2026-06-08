@@ -1,0 +1,15 @@
+{
+    ...
+    "routes": [
+      {
+        "source": "^/sap_process_automation_service/(.*)$",
+         "target": "$1",
+         "destination": "sap_process_automation_service",
+         "authenticationType": "xsuaa",
+         "csrfProtection": false
+     },
+      {
+        ...
+      }
+    ]
+  }

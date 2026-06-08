@@ -1,0 +1,18 @@
+<mvc:View controllerName="anubhav.start.myfioriapp.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <App id="idAppCon">
+        <Page title="Anubhav Trainings Start Build Process UI">
+            <content>
+                <VBox width="100%" direction="Column" id="__vbox0">
+                    <items>
+                        <Label text="Enter Customer ID:" labelFor="textInput"/>
+                        <Input width="100%" id="textInput" value="ANTON"/>
+                        <Button text="Start Build Process Anubhav" id="__button0" press="startWorkflow"/>
+                        <Text text="{/result}" maxLines="0" id="__text0"/>
+                    </items>
+                </VBox>
+            </content>
+        </Page>
+    </App>
+</mvc:View>
