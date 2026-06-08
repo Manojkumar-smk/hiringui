@@ -125,7 +125,7 @@
             "viewName": "anubhav.start.myfioriapp.view.Main",
             "type": "XML",
             "async": true,
-            "id": "idAppCon"
+            "id": "App"
         }
     },
     "sap.cloud": {
