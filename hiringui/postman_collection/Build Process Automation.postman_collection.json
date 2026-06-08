@@ -1,0 +1,351 @@
+{
+  "info": {
+    "_postman_id": "449b9b17-6c23-46d5-ab82-1b25a634005f",
+    "name": "Build Process Automation",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49205141",
+    "_collection_link": "https://go.postman.co/collection/49205141-449b9b17-6c23-46d5-ab82-1b25a634005f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Sales Order Header",
+      "request": {
+        "auth": {
+          "type": "oauth2",
+          "oauth2": [
+            {
+              "key": "client_authentication",
+              "value": "body",
+              "type": "string"
+            },
+            {
+              "key": "password",
+              "value": "Mano001*",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "manojkumar.smk09@outlook.com",
+              "type": "string"
+            },
+            {
+              "key": "accessTokenUrl",
+              "value": "https://48a14a1atrial.authentication.us10.hana.ondemand.com/oauth/token",
+              "type": "string"
+            },
+            {
+              "key": "clientSecret",
+              "value": "3d88070b-1567-420d-b064-e0bd151fc7a5$TC9dWhWtLkJDAbK4DM-Fw1tTphxxfj0uvHKbz_eAUHE=",
+              "type": "string"
+            },
+            {
+              "key": "clientId",
+              "value": "sb-8f9a32f0-df1c-4a24-ae91-fbbdc08b86c8!b652905|xsuaa!b49390",
+              "type": "string"
+            },
+            {
+              "key": "grant_type",
+              "value": "password_credentials",
+              "type": "string"
+            },
+            {
+              "key": "tokenName",
+              "value": "bpa_odata2.0_token",
+              "type": "string"
+            },
+            {
+              "key": "addTokenTo",
+              "value": "header",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"definitionId\": \"us10.48a14a1atrial.salesordermanagement.salesOrderApproval\",\r\n    \"context\": {\r\n        \"salesorderheader\": {\r\n            \"salesOrder\": \"100000456\",\r\n            \"salesOrderType\": \"OR\",\r\n            \"salesOrganization\": \"1010\",\r\n            \"distributionChannel\": 10,\r\n            \"organizationDivision\": 10,\r\n            \"soldToParty\": \"ANUBHAV\",\r\n            \"salesOrderDate\": \"2025-12-12\",\r\n            \"totalNetAmount\": 1000,\r\n            \"transactionCurrency\": \"EUR\",\r\n            \"customerGroup\": \"GRP1\"\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://spa-api-gateway-bpi-us-prod.cfapps.us10.hana.ondemand.com/workflow/rest/v1/workflow-instances",
+          "protocol": "https",
+          "host": [
+            "spa-api-gateway-bpi-us-prod",
+            "cfapps",
+            "us10",
+            "hana",
+            "ondemand",
+            "com"
+          ],
+          "path": [
+            "workflow",
+            "rest",
+            "v1",
+            "workflow-instances"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "shopppingcart",
+      "request": {
+        "auth": {
+          "type": "oauth2",
+          "oauth2": [
+            {
+              "key": "client_authentication",
+              "value": "body",
+              "type": "string"
+            },
+            {
+              "key": "password",
+              "value": "Mano001*",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "manojkumar.smk09@outlook.com",
+              "type": "string"
+            },
+            {
+              "key": "accessTokenUrl",
+              "value": "https://48a14a1atrial.authentication.us10.hana.ondemand.com/oauth/token",
+              "type": "string"
+            },
+            {
+              "key": "clientSecret",
+              "value": "3d88070b-1567-420d-b064-e0bd151fc7a5$TC9dWhWtLkJDAbK4DM-Fw1tTphxxfj0uvHKbz_eAUHE=",
+              "type": "string"
+            },
+            {
+              "key": "clientId",
+              "value": "sb-8f9a32f0-df1c-4a24-ae91-fbbdc08b86c8!b652905|xsuaa!b49390",
+              "type": "string"
+            },
+            {
+              "key": "grant_type",
+              "value": "password_credentials",
+              "type": "string"
+            },
+            {
+              "key": "tokenName",
+              "value": "bpa_odata2.0_token",
+              "type": "string"
+            },
+            {
+              "key": "addTokenTo",
+              "value": "header",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"definitionId\": \"us10.48a14a1atrial.salesordermanagement.salesOrderApproval\",\r\n    \"context\": {\r\n        \"salesorderheader\": {\r\n            \"salesOrder\": \"100000456\",\r\n            \"salesOrderType\": \"OR\",\r\n            \"salesOrganization\": \"1010\",\r\n            \"distributionChannel\": 10,\r\n            \"organizationDivision\": 10,\r\n            \"soldToParty\": \"ANUBHAV\",\r\n            \"salesOrderDate\": \"2025-12-12\",\r\n            \"totalNetAmount\": 1000,\r\n            \"transactionCurrency\": \"EUR\",\r\n            \"customerGroup\": \"GRP1\"\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://spa-api-gateway-bpi-us-prod.cfapps.us10.hana.ondemand.com/workflow/rest/v1/workflow-instances",
+          "protocol": "https",
+          "host": [
+            "spa-api-gateway-bpi-us-prod",
+            "cfapps",
+            "us10",
+            "hana",
+            "ondemand",
+            "com"
+          ],
+          "path": [
+            "workflow",
+            "rest",
+            "v1",
+            "workflow-instances"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "MassOrderProcessing",
+      "request": {
+        "auth": {
+          "type": "oauth2",
+          "oauth2": [
+            {
+              "key": "client_authentication",
+              "value": "body",
+              "type": "string"
+            },
+            {
+              "key": "password",
+              "value": "Mano001*",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "manojkumar.smk09@outlook.com",
+              "type": "string"
+            },
+            {
+              "key": "accessTokenUrl",
+              "value": "https://48a14a1atrial.authentication.us10.hana.ondemand.com/oauth/token",
+              "type": "string"
+            },
+            {
+              "key": "clientSecret",
+              "value": "3d88070b-1567-420d-b064-e0bd151fc7a5$TC9dWhWtLkJDAbK4DM-Fw1tTphxxfj0uvHKbz_eAUHE=",
+              "type": "string"
+            },
+            {
+              "key": "clientId",
+              "value": "sb-8f9a32f0-df1c-4a24-ae91-fbbdc08b86c8!b652905|xsuaa!b49390",
+              "type": "string"
+            },
+            {
+              "key": "grant_type",
+              "value": "password_credentials",
+              "type": "string"
+            },
+            {
+              "key": "tokenName",
+              "value": "bpa_odata2.0_token",
+              "type": "string"
+            },
+            {
+              "key": "addTokenTo",
+              "value": "header",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"definitionId\": \"us10.48a14a1atrial.salesordermanagement.salesOrderApproval\",\r\n    \"context\": {\r\n        \"salesorderheader\": {\r\n            \"salesOrder\": \"100000456\",\r\n            \"salesOrderType\": \"OR\",\r\n            \"salesOrganization\": \"1010\",\r\n            \"distributionChannel\": 10,\r\n            \"organizationDivision\": 10,\r\n            \"soldToParty\": \"ANUBHAV\",\r\n            \"salesOrderDate\": \"2025-12-12\",\r\n            \"totalNetAmount\": 1000,\r\n            \"transactionCurrency\": \"EUR\",\r\n            \"customerGroup\": \"GRP1\"\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://spa-api-gateway-bpi-us-prod.cfapps.us10.hana.ondemand.com/workflow/rest/v1/workflow-instances",
+          "protocol": "https",
+          "host": [
+            "spa-api-gateway-bpi-us-prod",
+            "cfapps",
+            "us10",
+            "hana",
+            "ondemand",
+            "com"
+          ],
+          "path": [
+            "workflow",
+            "rest",
+            "v1",
+            "workflow-instances"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "HiringProcess",
+      "request": {
+        "auth": {
+          "type": "oauth2",
+          "oauth2": [
+            {
+              "key": "client_authentication",
+              "value": "body",
+              "type": "string"
+            },
+            {
+              "key": "password",
+              "value": "Mano001*",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "manojkumar.smk09@outlook.com",
+              "type": "string"
+            },
+            {
+              "key": "accessTokenUrl",
+              "value": "https://48a14a1atrial.authentication.us10.hana.ondemand.com/oauth/token",
+              "type": "string"
+            },
+            {
+              "key": "clientSecret",
+              "value": "3d88070b-1567-420d-b064-e0bd151fc7a5$TC9dWhWtLkJDAbK4DM-Fw1tTphxxfj0uvHKbz_eAUHE=",
+              "type": "string"
+            },
+            {
+              "key": "clientId",
+              "value": "sb-8f9a32f0-df1c-4a24-ae91-fbbdc08b86c8!b652905|xsuaa!b49390",
+              "type": "string"
+            },
+            {
+              "key": "grant_type",
+              "value": "password_credentials",
+              "type": "string"
+            },
+            {
+              "key": "tokenName",
+              "value": "bpa_odata2.0_token",
+              "type": "string"
+            },
+            {
+              "key": "addTokenTo",
+              "value": "header",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"definitionId\": \"us10.48a14a1atrial.hrhiring.hiringTalent\",\r\n    \"context\": {\r\n        \"candidateinfo\": {\r\n            \"name\": \"Manojkumar.SMK\",\r\n            \"employerName\": \"\",\r\n            \"workExperience\": 0,\r\n            \"email\": \"manojkumar.smk09@gmail.com\",\r\n            \"country\": \"\",\r\n            \"budget\": 0,\r\n            \"skills\": [\r\n                \"\"\r\n            ],\r\n            \"comment\": \"\"\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://spa-api-gateway-bpi-us-prod.cfapps.us10.hana.ondemand.com/workflow/rest/v1/workflow-instances",
+          "protocol": "https",
+          "host": [
+            "spa-api-gateway-bpi-us-prod",
+            "cfapps",
+            "us10",
+            "hana",
+            "ondemand",
+            "com"
+          ],
+          "path": [
+            "workflow",
+            "rest",
+            "v1",
+            "workflow-instances"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
